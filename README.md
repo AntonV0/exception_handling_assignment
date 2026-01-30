@@ -53,13 +53,17 @@ This repository contains exercises, lab work, and an assignment completed as par
 - Caught the exception in the main loop and displayed a user-friendly message
 
 ### Team Lab – Web Scraper with Error Handling
-- Built a simple web scraper using the `requests` library
-- Prompted the user for a URL
-- Implemented comprehensive error handling for:
-  - Invalid URLs
-  - Connection issues
-  - Timeouts
-  - HTTP errors
+- Built a simple web scraper using the `requests` library  
+- Prompted the user to enter a URL, automatically prepending `https://` when missing  
+- Implemented a `while True loop` to allow multiple attempts without restarting the program  
+- Added comprehensive exception handling to manage:
+  - Invalid or malformed URLs  
+  - Network and connection errors  
+  - Request timeouts  
+  - HTTP status errors (e.g. 404, 500)  
+  - SSL-related errors  
+- Ensured the program displays clear, user-friendly error messages rather than crashing the program
+- Demonstrated correct ordering of exception handling to avoid overly broad catches  
 
 ---
 
